@@ -13,28 +13,38 @@
 <body>
     <main>
         <!-- <a href="#" class="btn signin">S'identifier</a> -->
+
         <header>
+
+            <picture>
+                <source media="(max-width: 765px)" srcset="./images/original-sm.jpg" />
+                <source media="" srcset="./images/original-lg.jpg" />
+                <img src="./images/original-lg.jpg" alt="">
+            </picture>
+
             <div id="img-desktop">
-                <div id="offre">
-                    <img id="grand-logo" src="./images/logo.svg" alt="logo de Disney+">
-                    <h1>Tout ce que vous imaginez<span class="break-desktop"><br></span>et encore +</h1>
-                    <div id="grid-container">
-                        <div class="offre-block mois">
-                            <h3>8,99 €<span> par mois</span></h3> 
-                            <p>Sans engagement*. Voir conditions d'abonnement.</p>
-                            <a href="#" class="btn signup signup-2"><span>S'INSCRIRE</span></a>
+                    <div id="offre">
+                        <img id="grand-logo" src="./images/logo.svg" alt="logo de Disney+">
+                        <h1>Tout ce que vous imaginez<span class="break-desktop"><br></span> et encore +</h1>
+                        <div id="grid-container">
+                            <div class="offre-block mois">
+                                <h3>8,99 €<span> par mois</span></h3> 
+                                <p>Sans engagement*. Voir conditions d'abonnement.</p>
+                                <a href="#" class="btn signup signup-2"><span>S'INSCRIRE</span></a>
+                            </div>
+            
+                            <div class="offre-block annuel">
+                                <h3>89,90 €<span> par un an</span></h3> 
+                                <p>Économisez plus de 15%**. Voir conditions d’abonnement.</p>
+                                <a href="#" class="btn signup signup-2"><span>ÉCONOMISEZ SUR 12 MOIS</span></a>
+                            </div>
                         </div>
-        
-                        <div class="offre-block annuel">
-                            <h3>89,90 €<span> par un an</span></h3> 
-                            <p>Économisez plus de 15%**. Voir conditions d’abonnement.</p>
-                            <a href="#" class="btn signup signup-2"><span>ÉCONOMISEZ SUR 12 MOIS</span></a>
-                        </div>
+                        <p id="details">* Résiliation effective à la fin de la période de facturation en cours. ** Comparatif entre 12 mois d'abonnement mensuel et l'abonnement annuel.</p>
+            
                     </div>
-                    <p id="details">* Résiliation effective à la fin de la période de facturation en cours. ** Comparatif entre 12 mois d'abonnement mensuel et l'abonnement annuel.</p>
-        
-                </div>
+                    
             </div>
+            <div class="vide"></div>
         </header>
         
         
@@ -51,8 +61,8 @@
         </section>
         <section id="section_2">
             <div class="app">
-                <div id="grid-container">
-                    <img src="./images/disney_7.png" alt="">
+                <div id="flex-container">
+                    <img class="img-app" src="./images/disney_7.png" alt="">
                     <div class="text-container">
                         <h2>Regardez où et quand vous le voulez</h2>
                         <ul>
@@ -67,7 +77,9 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn signup signup-2"><span>S'INSCRIRE</span></a>
+                <div id="container-btn-signup">
+                    <a href="#" class="btn signup signup-2"><span>S'INSCRIRE</span></a>
+                </div>
             </div>
             
         </section>
